@@ -53,7 +53,7 @@ export default async function Page() {
         </div>
         <div className='mb-10 mt-5'>
           <TagList
-            data={categoryList!.map((item) => ({
+            data={categoryList?.map((item) => ({
               id: String(item.id),
               name: item.name,
               href: `/category/${item.name}`,
