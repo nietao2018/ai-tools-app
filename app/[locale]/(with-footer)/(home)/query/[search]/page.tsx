@@ -42,7 +42,7 @@ export default async function Page({ params }: { params: { search?: string } }) 
   return (
     <Suspense fallback={<Loading />}>
       <div className='mb-10 mt-5'>
-        {params?.search && (
+        {params?.search && categoryList && (
           <TagList
             data={categoryList?.map((item) => ({
               id: String(item.id),
