@@ -61,7 +61,7 @@ export default async function Page() {
           />
         </div>
         <div className='flex flex-col gap-5'>
-          <h2 className='text-center text-[18px] lg:text-[32px]'>{t('ai-navigate')}</h2>
+          {/* <h2 className='text-center text-[18px] lg:text-[32px]'>{t('ai-navigate')}</h2> */}
           <WebNavCardList dataList={navigationList!} />
           <Link
             href='/explore'

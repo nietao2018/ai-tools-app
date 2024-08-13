@@ -1,185 +1,172 @@
 {
-  "Common": {
-    "loading": "Chargement..."
-  },
+  "Common": { "loading": "chargement..." },
   "Navigation": {
-    "title": "Répertoire des outils AI de Tap4",
-    "discover": "Découvrir l'IA",
-    "submit": "Soumettre",
-    "newtools": "Nouveaux outils",
-    "startup": "Startups",
-    "menu": "Menu"
+    "title": "Outils-ai.xyz",
+    "discover": "Découvrir l'AI",
+    "submit": "soumettre",
+    "newtools": "Nouvelle application",
+    "startup": "Démarrer",
+    "menu": "menu"
   },
   "Footer": {
-    "title": "Répertoire des outils AI de Tap4",
-    "subTitle": "Découvrez les meilleurs outils AI de 2024 dans le Répertoire des outils AI de Tap4 !",
-    "support": "Soutien",
-    "tap4": "Tap4 AI",
-    "tattoo": "Générateur de Tatouages AI",
-    "privacy": "Politique de confidentialité",
-    "termsConditions": "Termes et conditions",
+    "title": "Outils-ai.xyz",
+    "subTitle": "Découvrez la meilleure application d'IA en 2024, toutes dans Tools-Aai.xyz!",
+    "support": "soutien",
+    "tap4": "Outils-ai.xyz",
+    "tattoo": "Générateur de tatouage AI",
+    "privacy": "Confidentialité",
+    "termsConditions": "termes et conditions",
     "contactUs": "Contactez-nous"
   },
   "Faq": {
-    "title": "FAQ",
     "1": {
-      "question": "Qu'est-ce que le Répertoire des outils AI de Tap4 ?",
-      "answer": "Le Répertoire des outils AI de Tap4 - tap4.ai est en train de construire un répertoire d'outils AI pour vous aider à obtenir vos outils AI préférés. Vous pouvez y trouver des outils d'écriture AI, des outils de marketing AI, des outils de réécriture AI, des outils SEO AI, des outils d'apprentissage AI, des outils de génération AI, des outils de recherche AI, des outils artistiques AI, des outils de musique AI, des outils vidéo AI, des outils de codage AI, des outils photo AI, etc."
+      "question": "Qu'est-ce que Tools-Aai.xyz?",
+      "answer": "Outils -ai.xyz-ce site Web vise à vous aider à obtenir vos applications d'IA préférées. Vous pouvez trouver des outils d'écriture d'IA, des outils de marketing d'IA, des outils de réécriture d'IA, des outils IA SEO, des outils d'apprentissage en IA, des outils de génération d'IA, des outils de recherche sur l'IA, des outils d'art AI, des outils musicaux AI, des outils vidéo AI, des outils d'encodage AI, IA Image IA outils et ainsi de suite."
     },
     "2": {
-      "question": "Comment trouver votre outil AI dans le Répertoire des outils AI de Tap4 ?",
-      "answer-1": "1. Ouvrez tap4.ai.",
-      "answer-2": "2. Explorez les outils AI dans le Répertoire des outils AI de Tap4.",
-      "answer-3": "3. Cliquez sur l'outil AI dont vous avez besoin pour obtenir les détails et y accéder."
+      "question": "Comment trouver votre application AI dans Tools-Aai.xyz?",
+      "answer-1": "1. Ouvrir les outils-ai.xyz.",
+      "answer-2": "2. Parcourez les applications AI dans Tools-Aai.xyz.",
+      "answer-3": "3. Cliquez sur l'application AI dont vous avez besoin, vérifiez les détails et visitez-le."
     },
     "3": {
-      "question": "Quelles sont les principales caractéristiques du Répertoire des outils AI de Tap4 ?",
-      "answer-1": "1. Répertoire d'outils AI gratuit : trouvez gratuitement vos outils AI préférés ici.",
-      "answer-2": "2. Liste des startups : liste gratuite pour les développeurs d'outils AI."
+      "question": "Quelle est la fonction principale de Tools-Ai.xyz?",
+      "answer-1": "1. Liste des applications AI gratuite: vous trouvez ici que votre application d'IA préférée est gratuite.",
+      "answer-2": "2. Liste de démarrage: Liste de démarrage gratuite pour les développeurs d'applications AI."
     },
     "4": {
-      "question": "La soumission d'outils AI au Répertoire des outils AI de Tap4 est-elle gratuite ?",
-      "answer": "Oui, actuellement c'est gratuit. Mais vous devez partager le lien retour du Répertoire des outils AI de Tap4 !"
+      "question": "Est-il gratuit de soumettre des demandes d'IA à Tools-AI.xyz?",
+      "answer": "Oui, c'est actuellement gratuit. Mais vous devriez partager le lien arrière de Tools-Aai.xyz!"
     },
     "5": {
-      "question": "Quelles catégories d'outils AI sont prises en charge par le Répertoire des outils AI de Tap4 ?",
-      "answer": "Nous allons prendre en charge tous les types d'outils AI à l'avenir. Veuillez patienter quelques jours."
+      "question": "Quelles catégories d'applications AI prennent en charge les outils-ai.xyz?",
+      "answer": "Nous soutiendrons tous les types d'IA à l'avenir. Veuillez patienter quelques jours."
     },
     "6": {
-      "question": "Quelle est la fréquence de mise à jour des outils AI dans le Répertoire des outils AI de Tap4 ?",
-      "answer": "La liste des outils AI sera mise à jour quotidiennement."
+      "question": "Quelle est la fréquence de mise à jour des applications d'IA dans outils-ai.xyz?",
+      "answer": "La liste des IA sera mise à jour chaque jour."
     },
     "7": {
-      "question": "GPT-4o ou Sora AI sont-ils pris en charge ici ?",
-      "answer": "Vous pouvez obtenir des outils GPT-4o ou Sora AI ici. Il y a des vidéos d'introduction de GPT-4o et Sora, et vous pouvez accéder aux sites web des outils."
+      "question": "GPT-4O ou SORA AI soutient-il ici?",
+      "answer": "Vous pouvez obtenir des applications GPT-4O ou SORA AI ici. Voici l'introduction des vidéos GPT-4O et SORA, vous pouvez accéder au site Web de l'application."
     },
     "8": {
-      "question": "Dépannage",
-      "answer": "Si le contenu n'apparaît pas, essayez un autre navigateur et effacez le cache. Si le problème persiste, contactez-nous à : contact@6677.ai."
+      "question": "dépannage",
+      "answer": "Si le contenu n'apparaît pas, essayez d'autres navigateurs pour effacer le cache. Si le problème existe toujours, veuillez nous contacter: admin@tools-ai.xyz."
     },
     "9": {
-      "question": "Comment le contenu du Répertoire des outils AI de Tap4 est-il généré ?",
-      "answer": "Le contenu descriptif des outils AI est généré par GPT-4o d'OpenAI."
+      "question": "Comment le contenu de Tools-a.xyz est-il généré?",
+      "answer": "La description de l'application AI est générée par GPT-4O d'OpenAI."
     },
     "10": {
-      "question": "Quelles sont les autorisations d'utilisation des outils AI ?",
-      "answer": "Le Répertoire des outils AI de Tap4 est simplement un répertoire d'outils AI. Les autorisations d'utilisation des outils AI sont basées sur le site web de l'outil AI."
+      "question": "Quel est le droit d'utiliser des outils-ai.xyz?",
+      "answer": "Tools-Aai.xyz n'est qu'un répertoire pour les applications AI. Le droit d'utiliser les applications d'IA est basé sur les applications d'IA."
     },
-    "11": {
-      "question": "L'interface Web du Répertoire des outils AI de Tap4 est-elle open source ?",
-      "answer": "Oui, nous ouvrirons l'interface Web du Répertoire des outils AI de Tap4 sur GitHub (https://github.com/6677-ai/tap4-ai-webui). Veuillez nous donner un étoile."
-    }
+    "title": "Problème commun"
   },
   "FooterNavigation": {
     "privacyPolicy": {
-      "1-h1": "Politique de confidentialité du Répertoire des outils AI de Tap4",
-      "1-p": "Cette page est utilisée pour informer les visiteurs de mes politiques concernant la collecte, l'utilisation et la divulgation des informations personnelles si quelqu'un décide d'utiliser mon service. Si vous choisissez d'utiliser mon service, vous acceptez la collecte et l'utilisation des informations en relation avec cette politique. Les informations personnelles que je collecte sont utilisées pour fournir et améliorer le service. Je n'utiliserai ni ne partagerai vos informations avec personne, sauf comme décrit dans cette politique de confidentialité. Les termes utilisés dans cette politique de confidentialité ont les mêmes significations que dans nos Termes et Conditions.",
+      "1-h1": "Tools-ai.xyz Politique de confidentialité",
+      "1-p": "Cette page est utilisée pour informer les politiques des visiteurs sur la collecte, l'utilisation et la divulgation d'informations personnelles, et si quelqu'un décide d'utiliser mon service. Si vous choisissez d'utiliser mon service, vous acceptez que vous acceptez de collecter et d'utiliser des informations liées à cette politique. Les informations personnelles que j'ai collectées sont utilisées pour fournir et améliorer les services. Sauf indication contraire dans cette politique de confidentialité, je ne partagerai vos informations avec personne. Les termes utilisés dans cette politique de confidentialité ont la même signification que les termes de nos termes et conditions.",
       "2-h2": "1. Collecte et utilisation des informations",
-      "2-p": "Pour une meilleure expérience, lors de l'utilisation de notre service, je peux vous demander de nous fournir certaines informations personnellement identifiables. Les informations que je demande seront conservées sur votre appareil et ne seront en aucun cas collectées par moi. L'application utilise des services tiers qui peuvent collecter des informations utilisées pour vous identifier.",
-      "3-h2": "2. Données de journal",
-      "3-p": "Je tiens à vous informer que chaque fois que vous utilisez mon service, en cas d'erreur dans l'application, je collecte des données et des informations sur votre téléphone via des produits tiers appelés données de journal. Ces données de journal peuvent inclure des informations telles que l'adresse IP de votre appareil, le nom de l'appareil, la version du système d'exploitation, la configuration de l'application lors de l'utilisation de mon service, l'heure et la date de votre utilisation du service, et d'autres statistiques.",
+      "2-p": "Afin de fournir de meilleurs services, lorsque vous utilisez nos services, je peux vous demander de fournir des informations qui peuvent identifier votre identité personnelle. Les informations que j'ai demandées seront stockées sur votre appareil, et je ne collecterai en aucune façon. Cette application utilise un service de troisième partie qui peut collecter pour identifier vos informations.",
+      "3-h2": "2. Données de journalisation",
+      "3-p": "Je veux vous dire que chaque fois que vous utilisez mon service et que l'application est erronée, je collecterai des données et des informations sur votre téléphone mobile (via des produits de troisième partie). Ces données de journal peuvent inclure l'adresse IP de votre appareil, le nom de l'appareil, la version du système d'exploitation, la configuration de votre service, l'heure et la date de votre service et d'autres informations statistiques.",
       "4-h2": "3. Cookies",
-      "4-p": "Les cookies sont des fichiers contenant une petite quantité de données qui sont couramment utilisés comme identifiants uniques anonymes. Ces données sont envoyées à votre navigateur à partir des sites web que vous visitez et sont stockées sur la mémoire interne de votre appareil. Ce service n'utilise pas explicitement ces \"cookies\". Cependant, l'application peut utiliser des codes et des bibliothèques tiers qui utilisent des \"cookies\" pour collecter des informations et améliorer leurs services. Vous avez la possibilité d'accepter ou de refuser ces cookies et de savoir quand un cookie est envoyé à votre appareil. Si vous choisissez de refuser nos cookies, vous ne pourrez peut-être pas utiliser certaines parties de ce service.",
-      "5-h2": "4. Prestataires de services",
-      "5-p-1": "Je peux employer des sociétés tierces et des individus pour les raisons suivantes :",
-      "5-li-1": "Pour faciliter notre service ;",
-      "5-li-2": "Pour fournir le service en notre nom ;",
-      "5-li-3": "Pour exécuter des services liés au service ;",
-      "5-li-4": "Pour nous aider à analyser l'utilisation de notre service ;",
-      "5-p-2": "Je veux informer les utilisateurs de ce service que ces tiers ont accès à vos informations personnelles. La raison est d'exécuter les tâches qui leur sont assignées en notre nom. Cependant, ils sont obligés de ne pas divulguer ou utiliser les informations à d'autres fins.",
+      "4-p": "Cookie est une petite données de paragraphe, qui est généralement utilisée comme identifiant unique anonyme. Ces données sont envoyées à votre navigateur via le site Web que vous visitez et stocké à la mémoire de votre appareil. Ce service n'est pas clair pour utiliser ces \"cookies\". Cependant, l'application peut utiliser un code et une bibliothèque de troisième partie, qui utilise \"cookie\" pour collecter des informations et améliorer leurs services. Vous pouvez choisir d'accepter ou de rejeter ces cookies et de savoir quand envoyer des cookies à votre appareil. Si vous choisissez de rejeter nos cookies, vous ne pourrez peut-être pas utiliser certaines parties de ce service.",
+      "5-h2": "4. Fournisseur de services",
+      "5-p-1": "Je peux embaucher des entreprises et des particuliers de troisième partie pour les raisons suivantes:",
+      "5-li-1": "Promouvoir notre service;",
+      "5-li-2": "Au nom de nous pour fournir des services;",
+      "5-li-3": "Services exécutifs liés au service;",
+      "5-li-4": "Aidez-nous à analyser l'utilisation du service;",
+      "5-p-2": "Je tiens à dire aux utilisateurs de ce service que ces tiers peuvent accéder à vos informations personnelles. La raison en est que nous faisons les tâches qui leur sont assignées. Cependant, ils sont obligés de divulguer ou d'utiliser ces informations à d'autres fins.",
       "6-h2": "5. Sécurité",
-      "6-p": "Je valorise votre confiance en nous fournissant vos informations personnelles, nous nous efforçons donc d'utiliser des moyens commercialement acceptables pour les protéger. Mais rappelez-vous qu'aucune méthode de transmission sur Internet, ou méthode de stockage électronique n'est 100% sécurisée et fiable, et je ne peux garantir leur sécurité absolue.",
-      "7-h2": "6. Liens vers d'autres sites",
-      "7-p": "Ce service peut contenir des liens vers d'autres sites. Si vous cliquez sur un lien tiers, vous serez dirigé vers ce site. Notez que ces sites externes ne sont pas exploités par moi. Par conséquent, je vous conseille fortement de consulter la politique de confidentialité de ces sites. Je n'ai aucun contrôle sur et n'assume aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques de tout site ou service tiers.",
-      "8-h2": "7. Modifications de cette politique de confidentialité",
-      "8-p": "Je peux mettre à jour notre politique de confidentialité de temps en temps. Ainsi, vous êtes conseillé de consulter cette page périodiquement pour tout changement. Je vous notifierai de tout changement en publiant la nouvelle politique de confidentialité sur cette page. Ces changements sont effectifs immédiatement après leur publication sur cette page."
+      "6-p": "J'apprécie votre confiance dans nos informations personnelles, nous nous engageons donc à les protéger avec des moyens acceptables d'entreprise. Mais n'oubliez pas qu'il n'y a personne qui via la méthode de transmission Internet ou que la méthode de stockage électronique est 100% sécurisée et fiable, et je ne peux pas garantir qu'il est absolument sûr.",
+      "7-h2": "6. Lien vers d'autres sites Web",
+      "7-p": "Ce service peut inclure un lien vers d'autres sites Web. Si vous cliquez sur un lien de troisième partie, vous serez guidé vers le site Web. Veuillez noter que ces sites Web externes ne sont pas exploités par moi. Par conséquent, je vous recommande fortement de vérifier les politiques de confidentialité de ces sites Web. Je ne peux pas le contrôler, et je n'assume pas le contenu, la politique de confidentialité ou la pratique des sites Web ou services de troisième partie.",
+      "8-h2": "7. Changement de cette politique de confidentialité",
+      "8-p": "Je peux mettre à jour notre politique de confidentialité de temps à autre. Par conséquent, il est recommandé de vérifier les modifications sur cette page. Je vous informerai des modifications en publiant une nouvelle politique de confidentialité sur cette page. Ces changements ont pris effet immédiatement après la publication sur cette page."
     },
     "termsConditions": {
-      "1-h1": "Termes et Conditions du Répertoire des outils AI de Tap4",
-      "1-p": "Bienvenue sur le Répertoire des outils AI de Tap4 ! Notre site web situé à l'adresse https://tap4.ai (le \"Site\") est dédié à vous fournir la capacité de créer des images personnalisées. En accédant ou en utilisant notre site web, vous acceptez d'être lié par ces termes de service (les \"Termes\"). Si vous n'êtes pas d'accord avec l'un de ces termes, il vous est interdit d'utiliser le site.",
-      "2-h2": "1. Licence d'utilisation",
-      "2-p": "Vous êtes accordé une licence limitée, non exclusive et non transférable pour utiliser le site et ses services pour des usages personnels et non commerciaux. Cette licence n'inclut pas le droit de copier, modifier ou distribuer le contenu du site ou de l'utiliser à des fins commerciales sans notre consentement écrit préalable.",
+      "1-h1": "Clause de service outils-ai.xyz",
+      "1-p": "Bienvenue sur Tools-Aai.xyz! Notre site Web est situé sur http://tools-1.xyz (\"site Web\") et s'engage à vous fournir la possibilité de créer des images personnalisées. En visitant ou en utilisant notre site Web, vous acceptez d'être soumis à ces conditions de service (\"Conditions\"). Si vous n'êtes pas d'accord avec des conditions, le site Web est interdit.",
+      "2-h2": "1. Utilisez une licence",
+      "2-p": "Vous recevez une licence limitée, non exclusive et non transférée, et ce site Web et ses services sont utilisés à des fins individuelles et non commerciales. Sans notre consentement écrit à l'avance, cette licence n'inclut aucun droit de reproduire, de modifier ou de distribuer le contenu de ce site Web ou de l'utiliser à des fins commerciales.",
       "3-h2": "2. Propriété",
-      "3-p": "La propriété des images générées à partir de texte sur le site appartient à la personne qui a créé l'image. Tap4.ai ne revendique pas la propriété des images créées par les utilisateurs.",
-      "4-h2": "3. Collecte de données des utilisateurs",
-      "4-p": "Nous recueillons des données personnelles (nom, email et informations de paiement) et des données non personnelles (cookies web) pour améliorer nos services. L'utilisation de ces données est soumise à notre politique de confidentialité, disponible à ",
-      "terms-of-service": "Termes de service",
-      "5-h2": "4. Droit applicable",
-      "5-p": "Ces termes sont régis et interprétés conformément aux lois des États-Unis, sans égard à ses dispositions en matière de conflit de lois.",
-      "6-h2": "5. Modifications des termes",
-      "6-p": "Tap4 AI Directory se réserve le droit, à sa seule discrétion, de modifier ou de remplacer ces termes à tout moment. Nous vous informerons par email de tout changement. Votre utilisation continue du site après ces changements constitue votre acceptation des nouveaux termes.",
-      "7-h2": "6. Informations de contact",
-      "7-p": "Si vous avez des questions sur ces termes, veuillez nous contacter : contact@6677.ai.",
-      "last-p": "En utilisant le Répertoire des outils AI de Tap4, vous acceptez ces termes de service."
+      "3-p": "La propriété de l'image générée à partir du texte sur le site Web appartient à la personne qui crée l'image. Tools-ai.xyz ne revendique pas la propriété de l'image créée par les utilisateurs.",
+      "4-h2": "3. Collecte des données des utilisateurs",
+      "4-p": "Nous collectons des données personnelles (nom, e-mail et informations de paiement) et des données non personnelles (WebCie) pour améliorer nos services. L'utilisation de ces données est liée par notre politique de confidentialité, elle peut être dans",
+      "terms-of-service": "Clause de service",
+      "5-h2": "4. Loi de la juridiction",
+      "5-p": "Ces clauses devraient être sous la juridiction de la loi américaine et expliquées selon leurs explications.",
+      "6-h2": "5. Les termes changent",
+      "6-p": "Tools-a.xyz conserve le droit de modifier ou de remplacer ces clauses à tout moment lorsque nous décidons de modifier ou de remplacer ces termes. Nous informerons à l'utilisateur toute modification par e-mail. Une fois ces clauses modifiées, vous continuez à utiliser ce site Web pour constituer votre acceptation de ces changements.",
+      "7-h2": "6. Coordonnées",
+      "7-p": "Si vous avez des questions sur ces conditions, veuillez nous contacter: admin@tools-ai.xyz.",
+      "last-p": "L'utilisation d'outils-ai.xyz signifie que vous acceptez ces termes de service."
     }
   },
   "NotFound": {
-    "title": "404 Non Trouvé",
-    "goHome": "Retour à l'accueil"
+    "title": "404 introuvable",
+    "goHome": "Retour à la page d'accueil"
   },
   "Home": {
-    "title": "Tap4 AI - Découvrez les meilleurs outils d'IA 2024",
-    "subTitle": "Obtenez vos outils IA préférés dans l'annuaire des outils Tap4 AI. Les listes d'outils IA sont mises à jour quotidiennement par GPT-4o. C'est gratuit de soumettre ici pour améliorer votre SEO maintenant.",
-    "ai-navigate": "Liste des outils IA",
-    "exploreMore": "Obtenez plus d'outils IA",
-    "checkDetail": "Voir le détail",
-    "search": "Recherche",
-    "result": "Résultat de recherche",
-    "empty": "Aucune donnée disponible"
+    "title": "Tools -ai.xyz - Exploration de 2024 meilleure application AI",
+    "subTitle": "Tools-a.xyz explore 2024 Meilleures applications AI.",
+    "ai-navigate": "Liste des applications AI",
+    "exploreMore": "Obtenez plus de demandes d'IA",
+    "checkDetail": "Vérifiez les détails",
+    "search": "recherche",
+    "result": "Résultats de la recherche",
+    "empty": "Pas de données"
   },
-  "Category": {
-    "home": "Accueil",
-    "empty": "Aucune donnée disponible"
-  },
+  "Category": { "home": "première page", "empty": "Pas de données" },
   "Submit": {
-    "title": "Soumettez votre outil AI",
-    "subTitle": "Soumettez votre outil AI et obtenez du trafic du Répertoire des outils AI de Tap4",
-    "website": "Nom du site",
-    "url": "URL du site",
-    "submit": "Soumettre",
-    "add": "Ajouter",
-    "text": "à la page d'accueil de votre site, et vous pouvez soumettre votre site gratuitement avec succès !",
-    "networkError": "Erreur réseau",
+    "title": "Soumettez votre demande AI",
+    "subTitle": "Soumettez votre application AI et obtenez le trafic à partir de Tools-a.xyz",
+    "website": "Nom de site Web",
+    "url": "URL du site Web",
+    "submit": "soumettre",
+    "add": "Ajouter à",
+    "text": "Accédez à votre page d'accueil de votre site Web, puis vous pouvez soumettre avec succès votre site Web gratuitement!",
+    "networkError": "Erreur de réseau",
     "success": "succès"
   },
   "Startup": {
-    "title": "Lancez votre startup",
-    "subTitle": "La liste ultime pour lancer et promouvoir le site web de votre startup. Pour ajouter à la liste ou aider à soumettre votre produit à une liste gratuite, veuillez envoyer un email à : contact@tap4.ai.",
-    "updateTime": "Organisé et mis à jour quotidiennement. Dernière mise à jour :",
+    "title": "Commencez votre startup",
+    "subTitle": "Démarrez et promouvoir la liste ultime de votre site Web de démarrage. Pour ajouter à la liste ou aider à soumettre votre produit à la liste gratuite, veuillez envoyer un e-mail à: admin@tools-ai.xyz",
+    "updateTime": "Planifiez et mettez à jour tous les jours. Dernière mise à jour:",
     "table": {
-      "da": "DA",
-      "website": "Site web",
-      "tags": "Tags",
-      "price": "Prix",
-      "submission": "Soumission"
+      "da": "Da",
+      "website": "site web",
+      "tags": "Étiquette",
+      "price": "prix",
+      "submission": "soumettre"
     },
     "detail": {
-      "visitWebsite": "Visiter le site",
-      "introduction": "Introduction"
+      "visitWebsite": "Visiter le site Web",
+      "introduction": "introduire"
     }
   },
   "Explore": {
-    "title": "Découvrez les meilleurs outils AI de 2024",
-    "subTitle": "Trouvez vos outils AI préférés dans le Répertoire des outils AI de Tap4. La liste des outils AI est mise à jour quotidiennement par GPT-4o."
+    "title": "Découvert la meilleure application d'IA en 2024",
+    "subTitle": "Trouvez vos applications AI préférées dans Tools-Aai.xyz. La liste des applications AI est mise à jour par GPT-4O tous les jours."
   },
   "Metadata": {
     "home": {
-      "title": "Obtenez vos meilleurs outils AI | Répertoire des outils AI de Tap4",
-      "description": "Le Répertoire des outils AI de Tap4 est un outil qui propose un répertoire gratuit d'outils AI. Obtenez vos outils AI préférés avec le Répertoire des outils AI de Tap4, qui vise à collecter tous les outils AI et à fournir le meilleur service aux utilisateurs.",
-      "keywords": "Répertoire des outils AI de Tap4"
+      "title": "Obtenez votre meilleure application AI |",
+      "description": "Tools-Aai.xyz est une application qui fournit un répertoire d'application AI gratuit. Tools-ai.xyz vise à collecter toutes les applications AI et à fournir aux utilisateurs le meilleur service.",
+      "keywords": "Outils-ai.xyz"
     },
-    "ai": {
-      "titleSubfix": "Répertoire des outils AI de Tap4"
-    },
+    "ai": { "titleSubfix": "Outils-ai.xyz" },
     "explore": {
-      "title": "Découvrez les meilleurs outils AI de 2024 | Répertoire des outils AI de Tap4",
-      "titlePrefix": "Explorez le Répertoire des outils AI de Tap4",
-      "titleSuffix": "Répertoire des outils AI de Tap4",
-      "description": "Le Répertoire des outils AI de Tap4 est un outil qui propose un répertoire gratuit d'outils AI. Obtenez vos outils AI préférés avec le Répertoire des outils AI de Tap4, qui vise à collecter tous les outils AI et à fournir le meilleur service aux utilisateurs.",
-      "keywords": "Répertoire des outils AI de Tap4"
+      "title": "2024 Best AI Application Exploration |",
+      "titlePrefix": "Exploration de l'application AI",
+      "titleSuffix": "Application d'IA",
+      "description": "Tools-ai.xyz est un site Web qui fournit des applications IA gratuites. Obtenez votre application AI préférée via des outils-ai.xyz.",
+      "keywords": "Application d'IA"
     },
-    "submit": {
-      "title": "Soumettez votre outil AI et obtenez du trafic | Répertoire des outils AI de Tap4"
-    }
+    "submit": { "title": "Soumettez votre demande AI et obtenez le trafic |" }
   }
 }
