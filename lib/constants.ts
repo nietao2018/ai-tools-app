@@ -3,10 +3,10 @@ export const NAV_LINKS = [
     code: 'discover',
     href: '/explore',
   },
-  {
-    code: 'submit',
-    href: '/submit',
-  },
+  // {
+  //   code: 'submit',
+  //   href: '/submit',
+  // },
   // {
   //   code: 'startup',
   //   href: '/startup',
