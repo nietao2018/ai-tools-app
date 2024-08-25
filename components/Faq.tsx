@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 
 function TitleItem({ children }: { children: React.ReactNode }) {
   return (
-    <h3 className='flex items-center gap-1 text-2xl'>
+    <h3 className='flex items-center gap-1 text-lg'>
       <CircleHelp /> {children}
     </h3>
   );
