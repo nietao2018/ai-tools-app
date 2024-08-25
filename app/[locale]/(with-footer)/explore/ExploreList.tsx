@@ -6,7 +6,7 @@ import WebNavCardList from '@/components/webNav/WebNavCardList';
 
 import { TagList } from '../(home)/Tag';
 
-const WEB_PAGE_SIZE = 12;
+const WEB_PAGE_SIZE = 24;
 
 export default async function ExploreList({ pageNum }: { pageNum?: string }) {
   const supabase = createClient();
