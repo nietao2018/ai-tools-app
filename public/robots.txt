@@ -1,4 +1,4 @@
 Sitemap: https://tools-ai.xyz/sitemap.xml
 
 User-agent: *
-Allow: /
+Allow: /sitemap.xml
