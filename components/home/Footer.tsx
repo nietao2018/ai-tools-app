@@ -38,7 +38,7 @@ export default function Footer() {
     },
     {
       title: t('tattoo'),
-      href: 'https://tattooai.design',
+      href: 'https://www.ubrand.com/',
     },
   ];
 
