@@ -3,6 +3,7 @@
   "Navigation": {
     "title": "Tools-Ai.xyz",
     "discover": "Discover AI",
+    "blog": "Blog",
     "submit": "submit",
     "newtools": "New application",
     "startup": "Startup",
@@ -117,6 +118,14 @@
     "search": "search",
     "result": "Search results",
     "empty": "No data"
+  },
+  "Article": {
+    "title": "探索AI工具热点新闻",
+    "subTitle": "AI热点新闻， AI工具热点新闻"
+  },
+  "Blog": {
+    "blogTitle": "AI旅游规划工具介绍：智能时代的旅行革命",
+    "blogSubTitle": "旅游规划AI工具介绍：智能时代的旅行革命"
   },
   "Category": { "home": "front page", "empty": "No data" },
   "Submit": {

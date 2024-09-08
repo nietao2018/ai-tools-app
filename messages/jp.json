@@ -3,6 +3,7 @@
   "Navigation": {
     "title": "Tools-Ai.xyz",
     "discover": "AIを発見してください",
+    "blog": "ブログ",
     "submit": "提出する",
     "newtools": "新しいアプリケーション",
     "startup": "起動する",
@@ -121,6 +122,14 @@
     "result": "検索結果",
     "empty": "データなし"
   },
+  "Article": {
+    "title": "探索AI工具热点新闻",
+    "subTitle": "AI热点新闻， AI工具热点新闻"
+  },
+  "Blog": {
+    "blogTitle": "AI旅游规划工具介绍：智能时代的旅行革命",
+    "blogSubTitle": "旅游规划AI工具介绍：智能时代的旅行革命"
+  },  
   "Category": { "home": "フロントページ", "empty": "データなし" },
   "Submit": {
     "title": "AIアプリケーションを送信します",

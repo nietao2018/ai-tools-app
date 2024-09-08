@@ -112,6 +112,54 @@ export type Database = {
         };
         Relationships: [];
       };
+      blog_navigation: {
+        Row: {
+          category_name: string;
+          collection_time: string;
+          content: string;
+          detail: string;
+          id: number;
+          image_url: string;
+          name: string;
+          star_rating: number;
+          tag_name: string;
+          thumbnail_url: string;
+          title: string;
+          url: string;
+          website_data: string;
+        };
+        Insert: {
+          category_name?: string | null;
+          collection_time?: string | null;
+          content?: string | null;
+          detail?: string | null;
+          id?: number;
+          image_url?: string | null;
+          name: string;
+          star_rating?: number | null;
+          tag_name?: string | null;
+          thumbnail_url?: string | null;
+          title?: string | null;
+          url?: string | null;
+          website_data?: string | null;
+        };
+        Update: {
+          category_name?: string | null;
+          collection_time?: string | null;
+          content?: string | null;
+          detail?: string | null;
+          id?: number;
+          image_url?: string | null;
+          name?: string;
+          star_rating?: number | null;
+          tag_name?: string | null;
+          thumbnail_url?: string | null;
+          title?: string | null;
+          url?: string | null;
+          website_data?: string | null;
+        };
+        Relationships: [];
+      };
     };
     Views: {
       [_ in never]: never;
@@ -131,6 +179,7 @@ export type Database = {
 export type NavigationCategory = Database['public']['Tables']['navigation_category']['Row'];
 export type Submit = Database['public']['Tables']['submit']['Row'];
 export type WebNavigation = Database['public']['Tables']['web_navigation']['Row'];
+export type BlogNavigation = Database['public']['Tables']['blog_navigation']['Row'];
 
 type PublicSchema = Database[Extract<keyof Database, 'public'>];
 

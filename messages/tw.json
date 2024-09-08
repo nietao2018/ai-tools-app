@@ -5,6 +5,7 @@
   "Navigation": {
     "title": "Tools-ai.xyz",
     "discover": "发现AI",
+    "blog": "博客",
     "submit": "提交",
     "newtools": "新应用",
     "startup": "创业公司",
@@ -123,6 +124,14 @@
     "result": "搜索结果",
     "empty": "无数据"
   },
+  "Article": {
+    "title": "探索AI工具热点新闻",
+    "subTitle": "AI热点新闻， AI工具热点新闻"
+  },
+  "Blog": {
+    "blogTitle": "AI旅游规划工具介绍：智能时代的旅行革命",
+    "blogSubTitle": "旅游规划AI工具介绍：智能时代的旅行革命"
+  },  
   "Category": {
     "home": "首页",
     "empty": "无数据"

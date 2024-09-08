@@ -3,6 +3,7 @@
   "Navigation": {
     "title": "Outils-ai.xyz",
     "discover": "Découvrir l'AI",
+    "blog": "Blog",
     "submit": "soumettre",
     "newtools": "Nouvelle application",
     "startup": "Démarrer",
@@ -121,6 +122,14 @@
     "result": "Résultats de la recherche",
     "empty": "Pas de données"
   },
+  "Article": {
+    "title": "探索AI工具热点新闻",
+    "subTitle": "AI热点新闻， AI工具热点新闻"
+  },
+  "Blog": {
+    "blogTitle": "AI旅游规划工具介绍：智能时代的旅行革命",
+    "blogSubTitle": "旅游规划AI工具介绍：智能时代的旅行革命"
+  },  
   "Category": { "home": "première page", "empty": "Pas de données" },
   "Submit": {
     "title": "Soumettez votre demande AI",

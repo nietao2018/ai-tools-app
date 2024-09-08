@@ -3,6 +3,7 @@
   "Navigation": {
     "title": "Herramientas-aa.xyz",
     "discover": "Descubra AI",
+    "blog": "Blog",
     "submit": "entregar",
     "newtools": "Nueva aplicación",
     "startup": "Puesta en marcha",
@@ -120,6 +121,14 @@
     "search": "buscar",
     "result": "Resultados de la búsqueda",
     "empty": "Sin datos"
+  },
+  "Article": {
+    "title": "探索AI工具热点新闻",
+    "subTitle": "AI热点新闻, AI工具热点新闻"
+  },
+  "Blog": {
+    "blogTitle": "AI旅游规划工具介绍：智能时代的旅行革命",
+    "blogSubTitle": "旅游规划AI工具介绍：智能时代的旅行革命"
   },
   "Category": { "home": "página delantera", "empty": "Sin datos" },
   "Submit": {
