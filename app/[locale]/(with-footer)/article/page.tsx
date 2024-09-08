@@ -4,7 +4,7 @@ import { createClient } from '@/db/supabase/client';
 import { getTranslations } from 'next-intl/server';
 
 import { RevalidateOneHour } from '@/lib/constants';
-import BlogNavCardList from '@/components/blogNav/BlogNavCardList';
+import BlogNavCardList from '@/components/blogNav/blogNavCardList';
 
 const ScrollToTop = dynamic(() => import('@/components/page/ScrollToTop'), { ssr: false });
 
