@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
+import { headers } from 'next/headers';
 import Link from 'next/link';
 import { createClient } from '@/db/supabase/client';
 import { CircleChevronRight } from 'lucide-react';
@@ -20,13 +21,21 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     namespace: 'Metadata.home',
   });
 
+  const headersList = headers();
+  const host = headersList.get('host') || process.env.NEXT_PUBLIC_SITE_URL || '';
+  const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https';
+  const canonicalUrl = `${protocol}://${host}/${locale}`;
+
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL as string),
     title: t('title'),
     description: t('description'),
     keywords: t('keywords'),
     alternates: {
-      canonical: './',
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      url: canonicalUrl,
     },
   };
 }

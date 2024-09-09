@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
 import { createClient } from '@/db/supabase/client';
 import { CircleArrowRight } from 'lucide-react';
@@ -24,9 +25,30 @@ export async function generateMetadata({
     notFound();
   }
 
+  const headersList = headers();
+  const host = headersList.get('host') || process.env.NEXT_PUBLIC_SITE_URL || '';
+  const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https';
+  const canonicalUrl = `${protocol}://${host}/${locale}/ai/${websiteName}`;
+
   return {
     title: `${data[0].title} | ${t('titleSubfix')}`,
     description: data[0].content,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: `${data[0].title} | ${t('titleSubfix')}`,
+      description: data[0].content,
+      url: canonicalUrl,
+      images: [
+        {
+          url: data[0].thumbnail_url || '',
+          width: 1200,
+          height: 630,
+          alt: data[0].title,
+        },
+      ],
+    },
   };
 }
 

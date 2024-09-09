@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
+import { headers } from 'next/headers';
 import { createClient } from '@/db/supabase/client';
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import { RevalidateOneHour } from '@/lib/constants';
 import BlogNavCardList from '@/components/blogNav/blogNavCardList';
@@ -14,13 +15,32 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     namespace: 'Metadata.article',
   });
 
+  const headersList = headers();
+  const host = headersList.get('host') || process.env.NEXT_PUBLIC_SITE_URL || '';
+  const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https';
+
+  const currentLocale = await getLocale();
+  const defaultLocale = 'en'; // 假设默认语言是英语，请根据实际情况调整
+  const path = '/article';
+  let canonicalUrl = `${protocol}://${host}${path}`;
+
+  // 如果当前语言不是默认语言，则在 URL 中包含语言代码
+  if (locale !== defaultLocale) {
+    canonicalUrl = `${protocol}://${host}/${currentLocale}${path}`;
+  }
+
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL as string),
     title: t('title'),
     description: t('description'),
     keywords: t('keywords'),
     alternates: {
-      canonical: './',
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      url: canonicalUrl,
+      title: t('title'),
+      description: t('description'),
     },
   };
 }
