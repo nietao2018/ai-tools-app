@@ -34,9 +34,13 @@ export async function generateMetadata({
     canonicalUrl = `${protocol}://${host}/${currentLocale}/blog/${websiteName}`;
   }
 
+  // 添加关键词
+  const keywords = `${data[0].title}, ${t('titleSubfix')}, ${websiteName}`;
+
   return {
     title: `${data[0].title} | ${t('titleSubfix')}`,
     description: data[0].content,
+    keywords, // 添加关键词
     alternates: {
       canonical: canonicalUrl,
     },
