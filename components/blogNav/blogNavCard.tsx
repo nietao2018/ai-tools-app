@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 
+import Image from 'next/Image';
 import Link from 'next/link';
 import { BlogNavigation } from '@/db/supabase/types';
 
@@ -7,7 +8,7 @@ export default function WebNavCard({ name, thumbnail_url, title, content }: Blog
   return (
     <div className='flex h-[210px] flex-col gap-3 rounded-xl bg-[#2C2D36] p-1 lg:h-[343px]'>
       <Link href={`/blog/${name}`} title={title} className='group relative'>
-        <img
+        <Image
           src={thumbnail_url || ''}
           alt={title}
           title={title}

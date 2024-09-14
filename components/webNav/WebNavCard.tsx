@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { WebNavigation } from '@/db/supabase/types';
 import { SquareArrowOutUpRight } from 'lucide-react';
@@ -8,7 +9,7 @@ export default function WebNavCard({ name, thumbnail_url, title, url, content }:
   return (
     <div className='flex h-[210px] flex-col gap-3 rounded-xl bg-[#2C2D36] p-1 lg:h-[343px]'>
       <Link href={`/ai/${name}`} title={title} className='group relative'>
-        <img
+        <Image
           src={thumbnail_url || ''}
           alt={title}
           title={title}
