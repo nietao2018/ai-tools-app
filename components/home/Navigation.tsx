@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils';
 import BaseImage from '../image/BaseImage';
 import LocaleSwitcher from '../LocaleSwitcher';
 import LoginButton from '../login/LoginButton';
+import LogoutModal from '../logout/LogoutModal';
 import MenuBtn from './MenuBtn';
 import NavigationDrawer from './NavigationDrawer';
 
@@ -29,7 +30,7 @@ export default function Navigation() {
     <>
       <header className='bg-frosted-glass sticky left-0 top-0 z-50 flex h-[64px] bg-[#252A464A] px-5 blur-[60%] filter lg:px-0'>
         <nav className='mx-auto flex max-w-pc flex-1 items-center'>
-          <div>
+          <div className='lg:mr-[32px]'>
             <Link className='hover:opacity-80' href='/' title={t('title')}>
               <BaseImage
                 src='/images/nav-top.png'
@@ -42,7 +43,7 @@ export default function Navigation() {
             </Link>
           </div>
           {/* pc */}
-          <div className='ml-auto flex h-full items-center gap-x-[46px]'>
+          <div className='mr-auto flex h-full w-full items-center gap-x-[46px]'>
             <ul className='hidden h-full flex-1 capitalize lg:flex lg:gap-x-12'>
               {NavLinks.map((item) => (
                 <Link key={item.code} href={item.href} title={item.code}>
@@ -58,14 +59,13 @@ export default function Navigation() {
                 </Link>
               ))}
             </ul>
-            <div className='flex items-center gap-x-3'>
-              <LocaleSwitcher />
-            </div>
-            <div className='flex items-center gap-x-3'>
-              <LocaleSwitcher />
-            </div>
-            <div className='flex items-center gap-x-3'>
-              <LoginButton />
+            <div className='ml-auto flex h-full'>
+              <div className='flex items-center gap-x-3'>
+                <LocaleSwitcher />
+              </div>
+              <div className='flex items-center gap-x-3 lg:ml-[32px]'>
+                <LoginButton />
+              </div>
             </div>
           </div>
           {/* mobile */}
@@ -75,6 +75,7 @@ export default function Navigation() {
         </nav>
       </header>
       <NavigationDrawer open={open} setOpen={setOpen} />
+      <LogoutModal />
     </>
   );
 }

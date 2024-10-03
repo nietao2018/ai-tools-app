@@ -7,7 +7,12 @@
     "submit": "einreichen",
     "newtools": "Neue Anwendung",
     "startup": "Start-up",
-    "menu": "Speisekarte"
+    "menu": "Speisekarte",
+    "login": "Login",
+    "notification": "Notification",
+    "cancel": "Cancel",
+    "logout": "Exit",
+    "logoutText": "Are you confirm logout?"
   },
   "Footer": {
     "title": "Werkzeuge-ai.xyz",

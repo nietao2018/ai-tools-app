@@ -9,7 +9,12 @@
     "submit": "提交",
     "newtools": "新应用",
     "startup": "创业公司",
-    "menu": "菜单"
+    "menu": "菜单",
+    "login": "登录",
+    "notification": "提示",
+    "cancel": "取消",
+    "logout": "退出",
+    "logoutText": "您确定要退出登录吗？"
   },
   "Footer": {
     "title": "Tools-ai.xyz",

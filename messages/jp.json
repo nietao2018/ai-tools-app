@@ -7,8 +7,12 @@
     "submit": "提出する",
     "newtools": "新しいアプリケーション",
     "startup": "起動する",
-    "menu": "メニュー"
-  },
+    "menu": "メニュー",
+    "login": "Login",
+    "notification": "Notification",
+    "cancel": "Cancel",
+    "logout": "Exit",
+    "logoutText": "Are you confirm logout?"  },
   "Footer": {
     "title": "Tools-Ai.xyz",
     "subTitle": "2024年に最高のAIアプリケーションを発見してください。",

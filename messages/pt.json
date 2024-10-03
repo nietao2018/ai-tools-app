@@ -7,8 +7,12 @@
     "submit": "enviar",
     "newtools": "Novo aplicativo",
     "startup": "Comece",
-    "menu": "menu"
-  },
+    "menu": "menu",
+    "login": "Login",
+    "notification": "Notification",
+    "cancel": "Cancel",
+    "logout": "Exit",
+    "logoutText": "Are you confirm logout?"  },
   "Footer": {
     "title": "Tools-ai.xyz",
     "subTitle": "Descubra o melhor aplicativo de IA em 2024, tudo em ferramentas-ai.xyz!",

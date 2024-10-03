@@ -7,8 +7,12 @@
     "submit": "soumettre",
     "newtools": "Nouvelle application",
     "startup": "Démarrer",
-    "menu": "menu"
-  },
+    "menu": "menu",
+    "login": "Login",
+    "notification": "Notification",
+    "cancel": "Cancel",
+    "logout": "Exit",
+    "logoutText": "Are you confirm logout?"  },
   "Footer": {
     "title": "Outils-ai.xyz",
     "subTitle": "Découvrez la meilleure application d'IA en 2024, toutes dans Tools-Aai.xyz!",

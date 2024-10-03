@@ -1,43 +1,42 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { signIn } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/react';
+import { useTranslations } from 'next-intl';
+
+import { useCommonContext } from '@/app/context/common-context';
 
 export default function LoginButton() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const t = useTranslations('Navigation');
   const [userAvatar, setUserAvatar] = useState('');
+  const { data: session, status } = useSession();
+  // @ts-ignore
+  const { setShowLogoutModal } = useCommonContext();
 
   useEffect(() => {
-    // 这里应该检查用户的登录状态
-    // 例如,从localStorage或者API获取登录信息
-    const checkLoginStatus = () => {
-      // 模拟检查登录状态
-      const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
-      setIsLoggedIn(loggedIn);
-      if (loggedIn) {
-        // 如果登录,获取用户头像
-        setUserAvatar(localStorage.getItem('userAvatar') || '/default-avatar.png');
-      }
-    };
-
-    checkLoginStatus();
-  }, []);
+    if (session?.user?.image) {
+      setUserAvatar(session.user.image);
+    }
+  }, [session]);
 
   const handleLogin = () => {
-    // 这里应该实x现登录逻辑
+    // setShowLoginModal(true);
     signIn();
+  };
+  const handleLogout = () => {
+    setShowLogoutModal(true);
   };
 
   return (
     <div>
-      {isLoggedIn ? (
-        <Image src={userAvatar} alt='用户头像' width={40} height={40} className='rounded-full' />
+      {status === 'authenticated' ? (
+        <Image src={userAvatar} alt='用户头像' width={32} height={32} className='rounded-full' onClick={handleLogout} />
       ) : (
         <button
           type='button'
           onClick={handleLogin}
-          className='rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700'
+          className='rounded bg-blue-500 px-3 py-1 font-bold text-white hover:bg-blue-700 lg:h-[32px] lg:w-[80px]'
         >
-          登录
+          {t('login')}
         </button>
       )}
     </div>

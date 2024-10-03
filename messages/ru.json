@@ -7,7 +7,12 @@
     "submit": "представлять на рассмотрение",
     "newtools": "Новое приложение",
     "startup": "Запускать",
-    "menu": "меню"
+    "menu": "меню",
+    "login": "Login",
+    "notification": "Notification",
+    "cancel": "Cancel",
+    "logout": "Exit",
+    "logoutText": "Are you confirm logout?"
   },
   "Footer": {
     "title": "Tools-AI.xyz",

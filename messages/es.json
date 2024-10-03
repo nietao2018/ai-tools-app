@@ -7,7 +7,12 @@
     "submit": "entregar",
     "newtools": "Nueva aplicación",
     "startup": "Puesta en marcha",
-    "menu": "menú"
+    "menu": "menú",
+    "login": "Login",
+    "notification": "Notification",
+    "cancel": "Cancel",
+    "logout": "Exit",
+    "logoutText": "Are you confirm logout?"
   },
   "Footer": {
     "title": "Herramientas-aa.xyz",
