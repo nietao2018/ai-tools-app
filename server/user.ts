@@ -98,7 +98,13 @@ export const checkAndSaveUser = async (name: string, email: string, image: strin
     return updateData;
   } catch (e) {
     console.error('checkAndSaveUser', e);
-    return null;
+    return {
+      user_id: '',
+      name: '',
+      email,
+      image: '',
+      status: 0,
+    };
   }
 };
 
@@ -121,7 +127,13 @@ export const getUserById = async (user_id: any) => {
     };
   } catch (e) {
     console.error('getUserById', e);
-    return null;
+    return {
+      user_id: '',
+      name: '',
+      email: '',
+      image: '',
+      status: 0,
+    };
   }
 };
 
@@ -144,6 +156,12 @@ export const getUserByEmail = async (email: string) => {
     };
   } catch (e) {
     console.error('getUserByEmail', e);
-    return null;
+    return {
+      user_id: '',
+      name: '',
+      email,
+      image: '',
+      status: 0,
+    };
   }
 };
