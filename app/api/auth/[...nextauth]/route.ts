@@ -1,5 +1,5 @@
-// import {checkAndSaveUser, getUserByEmail} from "~/servers/user";
 import { headers } from 'next/headers';
+import { checkAndSaveUser, getUserByEmail } from '@/server/user';
 import { OAuth2Client } from 'google-auth-library';
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
@@ -62,8 +62,7 @@ const authOptions: NextAuthOptions = {
     async signIn({ user, account, profile, email, credentials }) {
       const headerAll = headers();
       const userIp = headerAll.get('x-forwarded-for');
-      console.log(userIp, 'userIp');
-      // await checkAndSaveUser(user.name, user.email, user.image, userIp);
+      await checkAndSaveUser(user.name || '', user.email || '', user.image || '', userIp || '');
       return true;
     },
     async redirect({ url, baseUrl }) {
@@ -77,7 +76,7 @@ const authOptions: NextAuthOptions = {
       if (session) {
         const email = session?.user?.email;
         if (email) {
-          // session.user = await getUserByEmail(email);
+          session.user = await getUserByEmail(email);
           return session;
         }
       }

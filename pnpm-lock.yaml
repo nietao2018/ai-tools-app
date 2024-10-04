@@ -29,6 +29,9 @@ importers:
       '@supabase/supabase-js':
         specifier: 2.43.2
         version: 2.43.2
+      '@types/uuid':
+        specifier: 10.0.0
+        version: 10.0.0
       ahooks:
         specifier: 3.8.1
         version: 3.8.1(react@18.2.0)
@@ -89,6 +92,9 @@ importers:
       undici:
         specifier: 5.28.4
         version: 5.28.4
+      uuid:
+        specifier: 10.0.0
+        version: 10.0.0
       zod:
         specifier: 3.23.8
         version: 3.23.8
@@ -808,6 +814,9 @@ packages:
 
   '@types/unist@3.0.2':
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
+
+  '@types/uuid@10.0.0':
+    resolution: {integrity: sha512-7gqG38EyHgyP1S+7+xomFtL+ZNHcKv6DwNaCZmJmo1vgMugyF3TCnXVg4t1uk89mLNwnLtnY3TpOpCOyp1/xHQ==, tarball: https://registry.npmmirror.com/@types/uuid/-/uuid-10.0.0.tgz}
 
   '@types/ws@8.5.10':
     resolution: {integrity: sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==}
@@ -2847,6 +2856,10 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==, tarball: https://registry.npmmirror.com/uuid/-/uuid-10.0.0.tgz}
+    hasBin: true
+
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==, tarball: https://registry.npmmirror.com/uuid/-/uuid-8.3.2.tgz}
     hasBin: true
@@ -3622,6 +3635,8 @@ snapshots:
   '@types/unist@2.0.10': {}
 
   '@types/unist@3.0.2': {}
+
+  '@types/uuid@10.0.0': {}
 
   '@types/ws@8.5.10':
     dependencies:
@@ -6058,6 +6073,8 @@ snapshots:
       '@types/react': 18.2.73
 
   util-deprecate@1.0.2: {}
+
+  uuid@10.0.0: {}
 
   uuid@8.3.2: {}
 

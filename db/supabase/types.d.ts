@@ -160,6 +160,39 @@ export type Database = {
         };
         Relationships: [];
       };
+      user_info: {
+        Row: {
+          id: number;
+          created_at: string;
+          updated_at: string;
+          user_id: string;
+          name: string;
+          email: string;
+          image: string;
+          last_login_ip: string;
+        };
+        Insert: {
+          id: number;
+          created_at: number;
+          updated_at: number;
+          user_id: string;
+          name: string;
+          email: string;
+          image: string;
+          last_login_ip: string;
+        };
+        Update: {
+          id: number;
+          created_at: number;
+          updated_at: number;
+          user_id: string;
+          name: string;
+          email: string;
+          image: string;
+          last_login_ip: string;
+        };
+        Relationships: [];
+      };
     };
     Views: {
       [_ in never]: never;
