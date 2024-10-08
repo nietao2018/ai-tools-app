@@ -7,10 +7,10 @@ export const NAV_LINKS = [
     code: 'blog',
     href: '/article',
   },
-  // {
-  //   code: 'submit',
-  //   href: '/submit',
-  // },
+  {
+    code: 'submit',
+    href: '/submit',
+  },
   // {
   //   code: 'startup',
   //   href: '/startup',
