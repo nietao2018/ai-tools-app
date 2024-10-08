@@ -2,7 +2,7 @@ import { HTMLAttributeAnchorTarget } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { CONTACT_US_EMAIL } from '@/lib/env';
+// import { CONTACT_US_EMAIL } from '@/lib/env';
 
 function InfoLink({
   href,
@@ -30,6 +30,13 @@ function InfoLink({
 
 export default function Footer() {
   const t = useTranslations('Footer');
+
+  const ContactLinks = [
+    {
+      title: t('discord'),
+      href: 'https://discord.gg/29fuHVjuS7',
+    },
+  ];
 
   const SupportLinks = [
     {
@@ -62,6 +69,21 @@ export default function Footer() {
         </div>
         <div className='mt-5 flex flex-col items-center gap-y-5 lg:mt-0 lg:flex-row lg:items-stretch lg:gap-x-10'>
           <div className='flex w-full flex-col gap-2'>
+            <p className='font-bold'>{t('contactUs')}</p>
+            {ContactLinks.map((item) => (
+              <a
+                href={item.href}
+                key={item.href}
+                target='_blank'
+                rel='noreferrer'
+                className='text-xs hover:opacity-70 lg:text-sm'
+                title={item.title}
+              >
+                {item.title}
+              </a>
+            ))}
+          </div>
+          <div className='flex w-full flex-col gap-2'>
             <p className='font-bold'>{t('support')}</p>
             {SupportLinks.map((item) => (
               <a
@@ -80,14 +102,6 @@ export default function Footer() {
             {INFO_LIST.map((item) => (
               <InfoLink key={item.href} href={item.href} title={item.title} />
             ))}
-            <a
-              href={`mailto:${CONTACT_US_EMAIL}`}
-              className='whitespace-nowrap text-xs hover:opacity-70 lg:text-sm'
-              title={t('contactUs')}
-              type='email'
-            >
-              {t('contactUs')}
-            </a>
           </div>
         </div>
       </div>
