@@ -25,9 +25,9 @@ export default function Page() {
     <div className='mx-auto max-w-pc'>
       <div className='flex-y-center mx-4 my-3 flex lg:my-10'>
         <h1 className='text-center text-5xl font-bold'>{t('title')}</h1>
-        <h2 className='mt-[5px] text-center text-sm font-bold lg:my-3'>{t('subTitle')}</h2>
+        <h2 className='mb-8 mt-8 mt-[5px] text-center text-sm font-bold lg:my-3'>{t('subTitle')}</h2>
+        <SubmitForm />
       </div>
-      <SubmitForm />
       <Faq />
     </div>
   );
