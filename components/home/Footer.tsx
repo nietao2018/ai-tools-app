@@ -1,32 +1,32 @@
-import { HTMLAttributeAnchorTarget } from 'react';
-import Link from 'next/link';
+// import { HTMLAttributeAnchorTarget } from 'react';
+// import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 // import { CONTACT_US_EMAIL } from '@/lib/env';
 
-function InfoLink({
-  href,
-  title,
-  target,
-  type,
-}: {
-  href: string;
-  title: string;
-  target?: HTMLAttributeAnchorTarget;
-  type?: string;
-}) {
-  return (
-    <Link
-      href={href}
-      title={title}
-      className='whitespace-nowrap text-xs hover:opacity-70 lg:text-sm'
-      target={target}
-      type={type}
-    >
-      {title}
-    </Link>
-  );
-}
+// function InfoLink({
+//   href,
+//   title,
+//   target,
+//   type,
+// }: {
+//   href: string;
+//   title: string;
+//   target?: HTMLAttributeAnchorTarget;
+//   type?: string;
+// }) {
+//   return (
+//     <Link
+//       href={href}
+//       title={title}
+//       className='whitespace-nowrap text-xs hover:opacity-70 lg:text-sm'
+//       target={target}
+//       type={type}
+//     >
+//       {title}
+//     </Link>
+//   );
+// }
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
         <div className='mt-5 flex flex-col items-center gap-y-5 lg:mt-0 lg:flex-row lg:items-stretch lg:gap-x-10'>
           <div className='flex w-full flex-col gap-2'>
-            <p className='font-bold'>{t('contactUs')}</p>
+            <p className='whitespace-nowrap font-bold'>{t('contactUs')}</p>
             {ContactLinks.map((item) => (
               <a
                 href={item.href}
@@ -84,7 +84,7 @@ export default function Footer() {
             ))}
           </div>
           <div className='flex w-full flex-col gap-2'>
-            <p className='font-bold'>{t('support')}</p>
+            <p className='whitespace-nowrap font-bold'>{t('support')}</p>
             {SupportLinks.map((item) => (
               <a
                 href={item.href}
@@ -98,9 +98,19 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <div className='grid grid-cols-2 gap-x-10 gap-y-5 lg:grid-cols-1 lg:gap-3'>
+          <div className='flex w-full flex-col gap-2'>
+            <p className='whitespace-nowrap font-bold'>{t('privacy')}</p>
             {INFO_LIST.map((item) => (
-              <InfoLink key={item.href} href={item.href} title={item.title} />
+              <a
+                href={item.href}
+                key={item.href}
+                target='_blank'
+                rel='noreferrer'
+                className='whitespace-nowrap text-xs hover:opacity-70 lg:text-sm'
+                title={item.title}
+              >
+                {item.title}
+              </a>
             ))}
           </div>
         </div>
