@@ -24,7 +24,6 @@ const FormSchema = z.object({
   image_url: z.string().url('Please enter a valid image URL'),
   thumbnail_url: z.string().url('Please enter a valid thumbnail URL'),
   website_data: z.string().min(1, 'Website data is required'),
-  tag_name: z.string().min(1, 'Tag is required'),
   category_name: z.string().min(1, 'Category is required'),
 });
 
@@ -102,7 +101,7 @@ export default function SubmitForm({ className }: { className?: string }) {
         image_url: formData.image_url,
         thumbnail_url: formData.thumbnail_url,
         name: formData.website_data,
-        tag_name: formData.tag_name,
+        tag_name: '',
         category_name: formData.category_name,
         collection_time: new Date().toISOString(),
         is_reviewed: false,
@@ -158,42 +157,6 @@ export default function SubmitForm({ className }: { className?: string }) {
                   <Input
                     placeholder='Enter URL'
                     className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          <FormField
-            control={form.control}
-            name='content'
-            render={({ field }) => (
-              <FormItem className='space-y-1'>
-                <FormLabel className='text-white/90'>{t('content')}</FormLabel>
-                <FormControl>
-                  <Textarea
-                    placeholder='Short description'
-                    className='input-border-pink min-h-[120px] w-full resize-none rounded-[8px] border-[0.5px] bg-dark-bg p-5'
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          <FormField
-            control={form.control}
-            name='detail'
-            render={({ field }) => (
-              <FormItem className='space-y-1'>
-                <FormLabel className='text-white/90'>{t('detail')}</FormLabel>
-                <FormControl>
-                  <Textarea
-                    placeholder='Detail description'
-                    className='input-border-pink min-h-[120px] w-full resize-none rounded-[8px] border-[0.5px] bg-dark-bg p-5'
                     {...field}
                   />
                 </FormControl>
@@ -296,13 +259,13 @@ export default function SubmitForm({ className }: { className?: string }) {
 
           <FormField
             control={form.control}
-            name='tag_name'
+            name='category_name'
             render={({ field }) => (
               <FormItem className='space-y-1'>
-                <FormLabel className='text-white/90'>{t('tag_name')}</FormLabel>
+                <FormLabel className='text-white/90'>{t('category_name')}</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder='Enter tag name'
+                    placeholder='Enter category name'
                     className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
                     {...field}
                   />
@@ -314,14 +277,32 @@ export default function SubmitForm({ className }: { className?: string }) {
 
           <FormField
             control={form.control}
-            name='category_name'
+            name='content'
             render={({ field }) => (
               <FormItem className='space-y-1'>
-                <FormLabel className='text-white/90'>{t('category_name')}</FormLabel>
+                <FormLabel className='text-white/90'>{t('content')}</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder='Enter category name'
-                    className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
+                  <Textarea
+                    placeholder='Short description'
+                    className='input-border-pink min-h-[120px] w-full resize-none rounded-[8px] border-[0.5px] bg-dark-bg p-5'
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name='detail'
+            render={({ field }) => (
+              <FormItem className='space-y-1'>
+                <FormLabel className='text-white/90'>{t('detail')}</FormLabel>
+                <FormControl>
+                  <Textarea
+                    placeholder='Detail description'
+                    className='input-border-pink min-h-[120px] w-full resize-none rounded-[8px] border-[0.5px] bg-dark-bg p-5'
                     {...field}
                   />
                 </FormControl>
