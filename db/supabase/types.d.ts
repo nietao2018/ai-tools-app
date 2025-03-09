@@ -160,7 +160,7 @@ export type Database = {
         };
         Relationships: [];
       };
-      SubmitData: {
+      submit_data: {
         Row: {
           category_name: string;
           collection_time: string;

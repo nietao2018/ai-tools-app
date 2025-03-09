@@ -52,7 +52,7 @@ export default function SubmitForm({ className }: { className?: string }) {
     let errMsg: any = t('networkError');
     try {
       setLoading(true);
-      const { error } = await supabase.from('SubmitData').insert({
+      const { error } = await supabase.from('submit_data').insert({
         title: formData.title,
         content: formData.content,
         detail: formData.detail,
