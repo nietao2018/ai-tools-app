@@ -27,11 +27,21 @@ const FormSchema = z.object({
   category_name: z.string().min(1, 'Category is required'),
 });
 
+// 添加新的类型定义
+type UploadingState = {
+  image: boolean;
+  thumbnail: boolean;
+};
+
 export default function SubmitForm({ className }: { className?: string }) {
   const supabase = createClient();
   const t = useTranslations('Submit');
 
   const [loading, setLoading] = useState(false);
+  const [uploading, setUploading] = useState<UploadingState>({
+    image: false,
+    thumbnail: false,
+  });
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -47,6 +57,37 @@ export default function SubmitForm({ className }: { className?: string }) {
       category_name: '',
     },
   });
+
+  // 修改处理图片上传的函数
+  const handleImageUpload = async (file: File, type: 'image' | 'thumbnail') => {
+    try {
+      setUploading((prev) => ({ ...prev, [type]: true }));
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('type', type);
+
+      const response = await fetch('/api/upload', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error('Upload failed');
+      }
+
+      const { url } = await response.json();
+
+      // 更新表单数据
+      form.setValue(type === 'image' ? 'image_url' : 'thumbnail_url', url);
+      toast.success(t('uploadSuccess'));
+    } catch (error) {
+      toast.error(t('uploadError'));
+      // eslint-disable-next-line no-console
+      console.error('Upload error:', error);
+    } finally {
+      setUploading((prev) => ({ ...prev, [type]: false }));
+    }
+  };
 
   const onSubmit = async (formData: z.infer<typeof FormSchema>) => {
     let errMsg: any = t('networkError');
@@ -167,11 +208,29 @@ export default function SubmitForm({ className }: { className?: string }) {
               <FormItem className='space-y-1'>
                 <FormLabel className='text-white/90'>{t('image_url')}</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder='Enter image URL'
-                    className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
-                    {...field}
-                  />
+                  <div className='flex gap-2'>
+                    <Input
+                      placeholder='Enter image URL'
+                      className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
+                      {...field}
+                    />
+                    <Input
+                      type='file'
+                      accept='image/*'
+                      className='hidden'
+                      id='image-upload'
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) handleImageUpload(file, 'image');
+                      }}
+                    />
+                    <label
+                      htmlFor='image-upload'
+                      className='flex-center h-[42px] w-[100px] rounded-[8px] bg-white text-black hover:cursor-pointer hover:opacity-80'
+                    >
+                      {uploading.image ? <Spinning className='size-[22px] text-black' /> : t('upload')}
+                    </label>
+                  </div>
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -185,11 +244,29 @@ export default function SubmitForm({ className }: { className?: string }) {
               <FormItem className='space-y-1'>
                 <FormLabel className='text-white/90'>{t('thumbnail_url')}</FormLabel>
                 <FormControl>
-                  <Input
-                    placeholder='Enter thumbnail URL'
-                    className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
-                    {...field}
-                  />
+                  <div className='flex gap-2'>
+                    <Input
+                      placeholder='Enter thumbnail URL'
+                      className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
+                      {...field}
+                    />
+                    <Input
+                      type='file'
+                      accept='image/*'
+                      className='hidden'
+                      id='thumbnail-upload'
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) handleImageUpload(file, 'thumbnail');
+                      }}
+                    />
+                    <label
+                      htmlFor='thumbnail-upload'
+                      className='flex-center h-[42px] w-[100px] rounded-[8px] bg-white text-black hover:cursor-pointer hover:opacity-80'
+                    >
+                      {uploading.thumbnail ? <Spinning className='size-[22px] text-black' /> : t('upload')}
+                    </label>
+                  </div>
                 </FormControl>
                 <FormMessage />
               </FormItem>
