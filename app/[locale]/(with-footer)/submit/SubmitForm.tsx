@@ -13,6 +13,7 @@ import { WEBSITE_EXAMPLE } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import Spinning from '@/components/Spinning';
 
 const FormSchema = z.object({
@@ -149,42 +150,6 @@ export default function SubmitForm({ className }: { className?: string }) {
 
           <FormField
             control={form.control}
-            name='content'
-            render={({ field }) => (
-              <FormItem className='space-y-1'>
-                <FormLabel className='text-white/90'>{t('content')}</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder='Enter content'
-                    className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          <FormField
-            control={form.control}
-            name='detail'
-            render={({ field }) => (
-              <FormItem className='space-y-1'>
-                <FormLabel className='text-white/90'>{t('detail')}</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder='Enter detail'
-                    className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-
-          <FormField
-            control={form.control}
             name='url'
             render={({ field }) => (
               <FormItem className='space-y-1'>
@@ -203,6 +168,42 @@ export default function SubmitForm({ className }: { className?: string }) {
 
           <FormField
             control={form.control}
+            name='content'
+            render={({ field }) => (
+              <FormItem className='space-y-1'>
+                <FormLabel className='text-white/90'>{t('content')}</FormLabel>
+                <FormControl>
+                  <Textarea
+                    placeholder='Short description'
+                    className='input-border-pink min-h-[120px] w-full resize-none rounded-[8px] border-[0.5px] bg-dark-bg p-5'
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name='detail'
+            render={({ field }) => (
+              <FormItem className='space-y-1'>
+                <FormLabel className='text-white/90'>{t('detail')}</FormLabel>
+                <FormControl>
+                  <Textarea
+                    placeholder='Detail description'
+                    className='input-border-pink min-h-[120px] w-full resize-none rounded-[8px] border-[0.5px] bg-dark-bg p-5'
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
             name='image_url'
             render={({ field }) => (
               <FormItem className='space-y-1'>
@@ -211,7 +212,8 @@ export default function SubmitForm({ className }: { className?: string }) {
                   <div className='flex gap-2'>
                     <Input
                       placeholder='Enter image URL'
-                      className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
+                      className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg/50 p-5'
+                      readOnly
                       {...field}
                     />
                     <Input
@@ -228,7 +230,7 @@ export default function SubmitForm({ className }: { className?: string }) {
                       htmlFor='image-upload'
                       className='flex-center h-[42px] w-[100px] rounded-[8px] bg-white text-black hover:cursor-pointer hover:opacity-80'
                     >
-                      {uploading.image ? <Spinning className='size-[22px] text-black' /> : t('upload')}
+                      {uploading.image ? <Spinning className='size-[22px] text-black' /> : 'upload'}
                     </label>
                   </div>
                 </FormControl>
@@ -247,7 +249,8 @@ export default function SubmitForm({ className }: { className?: string }) {
                   <div className='flex gap-2'>
                     <Input
                       placeholder='Enter thumbnail URL'
-                      className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg p-5'
+                      className='input-border-pink h-[42px] w-full rounded-[8px] border-[0.5px] bg-dark-bg/50 p-5'
+                      readOnly
                       {...field}
                     />
                     <Input
@@ -264,7 +267,7 @@ export default function SubmitForm({ className }: { className?: string }) {
                       htmlFor='thumbnail-upload'
                       className='flex-center h-[42px] w-[100px] rounded-[8px] bg-white text-black hover:cursor-pointer hover:opacity-80'
                     >
-                      {uploading.thumbnail ? <Spinning className='size-[22px] text-black' /> : t('upload')}
+                      {uploading.thumbnail ? <Spinning className='size-[22px] text-black' /> : 'upload'}
                     </label>
                   </div>
                 </FormControl>
