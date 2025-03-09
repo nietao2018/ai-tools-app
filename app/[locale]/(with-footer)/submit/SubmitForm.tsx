@@ -53,7 +53,6 @@ export default function SubmitForm({ className }: { className?: string }) {
       image_url: '',
       thumbnail_url: '',
       website_data: '',
-      tag_name: '',
       category_name: '',
     },
   });
